@@ -1,0 +1,13 @@
+env:
+  browser: false
+  es2021: true
+extends:
+  - airbnb-base
+parserOptions:
+  ecmaVersion: 13
+  sourceType: module
+rules: {
+  "no-console": "off",
+  "linebreak-style": 0,
+  "import/extensions": [0, { <js>: "always" }]
+}
