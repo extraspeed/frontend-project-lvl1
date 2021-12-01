@@ -14,7 +14,7 @@ function getProgression() {
   return values;
 }
 
-function createQuestion() {
+export default function createQuestion() {
   const progression = getProgression();
 
   let hide = false;
@@ -38,9 +38,4 @@ function createQuestion() {
     text: filteredProgression.join(' '),
     answer: answer.toString(),
   };
-}
-
-export default function ProgressionGame() {
-  this.rules = 'Find the greatest common divisor of given numbers.';
-  this.createQuestion = createQuestion;
 }

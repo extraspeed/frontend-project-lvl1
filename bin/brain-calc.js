@@ -3,4 +3,4 @@
 import CalcGame from '../src/games/calc.js';
 import gameInit from '../src/index.js';
 
-gameInit(new CalcGame());
+gameInit(CalcGame, 'What is the result of the expression?');

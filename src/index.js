@@ -3,11 +3,11 @@ import { greetingUser, getUserName } from './cli.js';
 
 const GAMES_COUNT = 3;
 
-export default (gameInstance) => {
+export default (gameFunc, rules) => {
   greetingUser();
-  console.log(gameInstance.rules);
+  console.log(rules);
   for (let i = 0; i < GAMES_COUNT; i += 1) {
-    const question = gameInstance.createQuestion();
+    const question = gameFunc();
 
     console.log(`Question: ${question.text}`);
     const userAnswer = readlineSync.question('Your answer: ');

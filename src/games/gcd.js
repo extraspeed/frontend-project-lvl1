@@ -7,7 +7,7 @@ function getGcd(a, b) {
   return Math.abs(a);
 }
 
-function createQuestion() {
+export default function createQuestion() {
   const num1 = random(0, 100) + 1;
   const num2 = random(0, 100) + 1;
 
@@ -15,9 +15,4 @@ function createQuestion() {
     text: `${num1} ${num2}`,
     answer: getGcd(num1, num2).toString(),
   };
-}
-
-export default function GCDGame() {
-  this.rules = 'Find the greatest common divisor of given numbers.';
-  this.createQuestion = createQuestion;
 }

@@ -3,4 +3,4 @@
 import ProgressionGame from '../src/games/progression.js';
 import gameInit from '../src/index.js';
 
-gameInit(new ProgressionGame());
+gameInit(ProgressionGame, 'Find the greatest common divisor of given numbers.');

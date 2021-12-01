@@ -27,15 +27,10 @@ function generateExpression() {
   ];
 }
 
-function createQuestion() {
+export default function createQuestion() {
   const [num1, num2, operation, result] = generateExpression();
   return {
     text: `${num1} ${operation} ${num2}`,
     answer: result.toString(),
   };
-}
-
-export default function CalcGame() {
-  this.rules = 'What is the result of the expression?';
-  this.createQuestion = createQuestion;
 }
