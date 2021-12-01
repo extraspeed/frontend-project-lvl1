@@ -7,14 +7,15 @@ function isPrime(num) {
   return num > 1;
 }
 
-export default class PrimeGame {
-  rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+function createQuestion() {
+  const num = random(1, 500);
+  return {
+    text: num,
+    answer: isPrime(num) ? 'yes' : 'no',
+  };
+}
 
-  static createQuestion() {
-    const num = random(1, 500);
-    return {
-      text: num,
-      answer: isPrime(num) ? 'yes' : 'no',
-    };
-  }
+export default function PrimeGame() {
+  this.rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+  this.createQuestion = createQuestion;
 }

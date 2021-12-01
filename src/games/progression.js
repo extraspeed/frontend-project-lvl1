@@ -14,32 +14,33 @@ function getProgression() {
   return values;
 }
 
-export default class ProgressionGame {
-  rules = 'Find the greatest common divisor of given numbers.';
+function createQuestion() {
+  const progression = getProgression();
 
-  static createQuestion() {
-    const progression = getProgression();
+  let hide = false;
+  let answer;
 
-    let hide = false;
-    let answer;
-
-    const filteredProgression = progression.map((x) => {
-      if (!hide && random(0, 20) < 3) {
-        hide = true;
-        answer = x;
-        return '..';
-      }
-      return x;
-    });
-
-    if (!hide) {
-      answer = filteredProgression[progression.length - 1];
-      filteredProgression[progression.length - 1] = '..';
+  const filteredProgression = progression.map((x) => {
+    if (!hide && random(0, 20) < 3) {
+      hide = true;
+      answer = x;
+      return '..';
     }
+    return x;
+  });
 
-    return {
-      text: filteredProgression.join(' '),
-      answer: answer.toString(),
-    };
+  if (!hide) {
+    answer = filteredProgression[progression.length - 1];
+    filteredProgression[progression.length - 1] = '..';
   }
+
+  return {
+    text: filteredProgression.join(' '),
+    answer: answer.toString(),
+  };
+}
+
+export default function ProgressionGame() {
+  this.rules = 'Find the greatest common divisor of given numbers.';
+  this.createQuestion = createQuestion;
 }
