@@ -7,4 +7,4 @@
 <a href="https://asciinema.org/a/UOdrlzspKa8SSJledrxtoGOL1">Calc Game Demo</a><br>
 <a href="https://asciinema.org/a/IaGsrSqirMhLCAIM8GFhbXqTs">GCD Game Demo</a><br>
 <a href="https://asciinema.org/a/FlXULgC1orFpdzv6PEmyIRQ8y">Progression Game Demo</a><br>
-<a href="https://asciinema.org/a/oQMra7vVExE20SpXsA0TOu8HN">Progression Game Demo</a>
+<a href="https://asciinema.org/a/oQMra7vVExE20SpXsA0TOu8HN">Prime Game Demo</a>
