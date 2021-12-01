@@ -6,3 +6,4 @@
 <a href="https://asciinema.org/a/2U7vJm79VDQfsB57WtF5pbNcQ">Even Game Demo</a><br>
 <a href="https://asciinema.org/a/UOdrlzspKa8SSJledrxtoGOL1">Calc Game Demo</a><br>
 <a href="https://asciinema.org/a/IaGsrSqirMhLCAIM8GFhbXqTs">GCD Game Demo</a><br>
+<a href="https://asciinema.org/a/FlXULgC1orFpdzv6PEmyIRQ8y">Progression Game Demo</a><br>

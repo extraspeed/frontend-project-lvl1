@@ -1,11 +1,9 @@
-function getRandomInt(max) {
-  return Math.floor(Math.random() * max);
-}
+import random from '../random.js';
 
 function generateExpression() {
-  const num1 = getRandomInt(50);
-  const num2 = getRandomInt(50);
-  const operation = getRandomInt(3);
+  const num1 = random(0, 50);
+  const num2 = random(0, 50);
+  const operation = random(0, 3);
 
   let operationStr;
   let result;
