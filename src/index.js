@@ -7,7 +7,7 @@ export default (gameInstance) => {
   greetingUser();
   console.log(gameInstance.rules);
   for (let i = 0; i < GAMES_COUNT; i += 1) {
-    const question = gameInstance.constructor.createQuestion();
+    const question = gameInstance.createQuestion();
 
     console.log(`Question: ${question.text}`);
     const userAnswer = readlineSync.question('Your answer: ');
